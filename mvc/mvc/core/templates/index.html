@@ -7,8 +7,8 @@
 
 <style>
     button {
-        width: 180px;
-        height: 50px;
+        width: 80px;
+        height: 20px;
     }
 
     footer {
@@ -30,6 +30,9 @@
     footer > div p.copy {
         text-align: center;
     }
+	form-control ls-login-bg-user input-lg{
+		i
+	}
 </style>
 </head>
 
@@ -38,17 +41,17 @@
     <div class="form-group ls-login-user">
         <label for="userLogin">Usuário</label>
         <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
-    </div>
+    </div><br>
     <div class="form-group ls-login-password">
         <label for="userPassword">Senha</label>
         <input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
-    </div>
+    </div> <br>
 
-    <a href="#" class="ls-login-forgot">Esqueci minha senha</a>
+    <!-- <a href="html/profile.html" class="ls-login-forgot">Esqueci minha senha</a>-->
 
-    <input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
+    <button onclick="window.location.href='html/profile.html'" type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
     <p class="txt-center ls-login-signup">Não possui um usuário na Consultoria de Carros e Acessórios?
-        <a href="#">Cadastre-se agora</a>
+        <a href="html/register.html">Cadastre-se agora</a>
     </p>
     
 </body>
