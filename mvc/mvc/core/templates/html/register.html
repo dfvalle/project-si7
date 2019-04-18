@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+	<style>
+		.text-center{
+			margin-top: .5em
+		}
+	</style>
+</head>
+
+<body class="text-center" style="background-color:lightgrey;">
+	<h3><strong> Ficha de Cadastro</strong></h3><br>
+    <div class="container">
+        <br>
+        <br>
+        <form>
+		<div class="row">
+			<div col-12>
+			   <div class="form-row">
+                <div class="form-group col-md-6 text-left">
+                    <label>Nome Completo</label>
+                    <input class="form-control" placeholder="Digite o nome completo" maxlength="30" required="required">
+                </div>
+                <div class="form-group col-md-6 text-left">
+                    <label>E-mail</label>
+                    <input class="form-control" placeholder="Digite o e-mail" required="required">
+                </div>
+				<div class="form-group col-md-6 text-left">
+                    <label for="inputDate">Data de Nascimento</label>
+                    <input type="text" class="form-control" id="inputDate" placeholder="00/00/0000" maxlength="10" required="required" data-inputmask="'mask'">
+                </div>
+				<div class="form-group col-md-6 text-left">
+                    <label for="inputPhone">Celular</label>
+                    <input type="text" class="form-control" id="inputPhone" placeholder="(00) 00000-0000" required="required">
+                </div>
+                <div class="form-group col-md-4 text-left">
+                    <label class="text-left" for="inputUser">Usuario</label>
+                    <input type="text" class="form-control" id="inputUser" placeholder="Digite o nome para o usuario" required="required">
+                </div>
+				<div class="form-group col-md-4 text-left">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Digite uma senha" required="required">
+                </div>
+                <div class="form-group col-md-4 text-left">
+                    <label for="inputPassword4">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Confirme a senha" required="required">
+                </div>
+				<div class="form-group col-md-12 text-left">
+					<label for="inputAddress">Endereço</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="Digite o endereço completo" maxlength="30" required="required">
+				</div>
+				 <div class="form-group col-md-6 text-left">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" maxlength="30" required="required">
+                </div>
+                <div class="form-group col-md-4 text-left">
+                    <label for="inputState">Estado</label>
+                    <input type="text" class="form-control" id="inputState" required="required">
+                </div>
+                <div class="form-group col-md-2 text-left">
+                    <label for="inputZip">CEP</label>
+                    <input type="text" class="form-control" id="inputZip" required="required">
+                </div>				
+			</div>
+		</div>               
+            </div>
+			<br>
+			<div class="d-flex justify-content-end row"><button type="submit" class="btn btn-primary col-md-2">Cadastrar</button></div>            
+            <br>
+			<div class="d-flex justify-content-end row"><a href="../">Voltar</a></div>
+            
+        </form>
+    </div>
+</body>
+
+</html>
