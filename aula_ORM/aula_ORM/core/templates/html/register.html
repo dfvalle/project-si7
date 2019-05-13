@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+	<link rel="icon" href="../icon-car.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		.text-center{
+			margin-top: .5em
+		}
+        .modal-header .close{
+        margin-left: -20%;
+        }
+        footer > div p.copy {
+        text-align: center;
+    }
+	</style>
+</head>
+
+<body class="text-center" style="background-color:lightgrey;">
+	<h3><strong> Ficha de Cadastro</strong></h3><br>
+    <div class="container">
+        <br>
+        <br>
+        <form>
+		<div class="row">
+			<div col-12>
+			   <div class="form-row">
+                <div class="form-group col-md-6 text-left">
+                    <label>Nome Completo</label>
+                    <input class="form-control" placeholder="Digite o nome completo" maxlength="30" required="required">
+                </div>
+                <div class="form-group col-md-6 text-left">
+                    <label>E-mail</label>
+                    <input class="form-control" placeholder="Digite o e-mail" required="required">
+                </div>
+				<div class="form-group col-md-6 text-left">
+                    <label for="inputDate">Data de Nascimento</label>
+                    <input type="text" class="form-control" id="inputDate" placeholder="00/00/0000" maxlength="10" required="required" data-inputmask="'mask'">
+                </div>
+				<div class="form-group col-md-6 text-left">
+                    <label for="inputPhone">Celular</label>
+                    <input type="text" class="form-control" id="inputPhone" placeholder="(00) 00000-0000" required="required">
+                </div>
+                <div class="form-group col-md-4 text-left">
+                    <label class="text-left" for="inputUser">Usuario</label>
+                    <input type="text" class="form-control" id="inputUser" placeholder="Digite o nome para o usuario" required="required">
+                </div>
+				<div class="form-group col-md-4 text-left">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Digite uma senha" required="required">
+                </div>
+                <div class="form-group col-md-4 text-left">
+                    <label for="inputPassword4">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Confirme a senha" required="required">
+                </div>
+				<div class="form-group col-md-12 text-left">
+					<label for="inputAddress">Endereço</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="Digite o endereço completo" maxlength="30" required="required">
+				</div>
+				 <div class="form-group col-md-6 text-left">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" maxlength="30" required="required">
+                </div>
+                <div class="form-group col-md-4 text-left">
+                    <label for="inputState">Estado</label>
+                    <input type="text" class="form-control" id="inputState" required="required">
+                </div>
+                <div class="form-group col-md-2 text-left">
+                    <label for="inputZip">CEP</label>
+                    <input type="text" class="form-control" id="inputZip" required="required">
+                </div>				
+			</div>
+		</div>               
+            </div>
+			<br>
+            <div class="d-flex justify-content-end row"><button type="button" class="btn btn-primary col-md-2" data-toggle="modal" data-target="#myModal">Cadastrar</button>
+                
+                <div class="container">
+                                  
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Cadastro realizado com sucesso!</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Seu cadastro foi realizado com sucesso, por favor dirija-se para a home.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.location.href='../index.html'">Home</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>           
+            <br>
+			<div class="d-flex justify-content-end row"><a href="../index.html">Voltar</a></div>
+            
+        </form>
+    </div>
+</body>
+<footer align="left">
+    <div>
+        <p><strong>Sistemas de Informação</strong>
+                <ul>
+                    <li> Desenvolvido por:
+                    <br>
+                         Erick Oliveira - RA:1600293
+                    <br>
+                         Daniel do Valle - RA:1600204
+                    </li>
+                </ul>
+        </p>
+    </div>
+
+    <div>
+        <p class="copy">
+            Copyright Erick e Daniel © 
+        </p>
+    </div>       
+</footer> 
+</html>
