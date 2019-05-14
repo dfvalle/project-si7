@@ -5,8 +5,8 @@ from django.db import models
 class Register(models.Model):
 	nome = models.CharField("Nome", max_length=30)
 	email = models.EmailField("Email", max_length=30)
-	data_nascimento = models.DataField("Data_nascimento")
-	celular = models.IntegerField("Celular", max_length=50)
+	data_nascimento = models.DateField("Data Nascimento")
+	celular = models.IntegerField("Celular")
 	usuario = models.SlugField("Usuario", max_length=15)
 	senha = models.SlugField("Senha", max_length=15)
 	endereco = models.SlugField("Endereco", max_length=30)

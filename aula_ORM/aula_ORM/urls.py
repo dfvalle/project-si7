@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from aula_ORM.core.views import *
+from aula_ORM.core.models import *
 
 urlpatterns = [
+	path('', index),
+	path('html/profile.html', profile,
+	path('html/cars.hmtl', cars),
+	path('html/accessories.html', accessories),
     path('admin/', admin.site.urls),
 ]
